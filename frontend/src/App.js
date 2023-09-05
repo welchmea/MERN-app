@@ -3,18 +3,18 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import {GiMountains} from 'react-icons/gi';
 
-import products from './frontend/src/data/products.js';
+import products from './data/products.js';
 
 
-import Nav from './frontend/src/components/Nav.js';
-import OrderPage from './frontend/src/pages/OrderPage.js'
-import HomePage from './frontend/src/pages/HomePage.js';
-import StaffPage from './frontend/src/pages/StaffPage.js';
-import GalleryPage from './frontend/src/pages/GalleryPage.js';
-import VitaminPage from './frontend/src/pages/VitaminPage.js';
-import CreateVitamin from './frontend/src/pages/CreateVitamin.js';
-import FeaturePage from './frontend/src/pages/Features.js';
-import UpdateVitamin from './frontend/src/pages/UpdateVitamin.js';
+import Nav from './components/Nav.js';
+import OrderPage from './pages/OrderPage.js'
+import HomePage from './pages/HomePage.js';
+import StaffPage from './pages/StaffPage.js';
+import GalleryPage from './pages/GalleryPage.js';
+import VitaminPage from './pages/VitaminPage.js';
+import CreateVitamin from './pages/CreateVitamin.js';
+import FeaturePage from './pages/Features.js';
+import UpdateVitamin from './pages/UpdateVitamin.js';
 
 
 
