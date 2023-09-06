@@ -87,7 +87,8 @@ footer {
   color:var(--canary)
 }
 /* ----- Anchors ----- Text links */
-a {}
+/* a {} */
+
 a:link {
   color: var(--forestgreen);
 }
@@ -323,7 +324,7 @@ tbody {}
   font-family: 'Libre Caslon Text', sans-serif;
   font-size:90%;
   background-color:var(--forestgreen);
-  color:var(--canary);
+  color:var(--brownbear);
   font-weight: bold;
   padding:4%;
   border-color: var(--brownbear);
