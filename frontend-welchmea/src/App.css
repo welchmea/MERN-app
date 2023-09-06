@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Libre+Caslon+Text&family=Lora&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
+:root {
+
+--lightgreybrown: rgba(94, 80, 78, 1); 
+--salmony: rgba(227, 135, 121, 0.6); 
+--pearlypink: rgba(222, 189, 184, 0.5); 
+--bordeauxbrown: rgba(85, 56, 50, 1); 
+--browngrey: rgba(174, 148, 144, 1); 
+--greypink: rgb(208, 179, 174); 
+--newblue: rgb(19, 65, 113);  
+--canary:rgb(237, 237, 200);
+--yellowbeige:rgb(245, 245, 230);
+--schoolbus:rgba(220, 203, 161, 0.8);
+--bluesky:rgb(119, 165, 188);
+--algae:rgba(11, 103, 99, 0.7);
+--forestgreen:rgba(19, 63, 60, 0.8);
+--mossgreen:rgb(78, 156, 198);
+--opalgreen:rgba(117, 152, 135, 0.5);
+--brownbear:rgb(51, 29, 24);
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {       /* Can alternatively define in html {} or :root {} */
+  background-image: url(images/mt-hood-dusk-timberline-trail-view.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top left;
+  background-repeat: no-repeat;
+  color:var(--brownbear);
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 2%;
+  max-width: 90%;
+  min-width: 20%;
+}
+
+.iconText {
+  font-size: 80%;
+  text-align: center;
+}
+.icon {
+  font-size: 150%;
+  color: var(--yellowbeige)
+}
+.databasePara {
+  text-align: center;
+  margin: 0 10% 3% 10%
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  padding:1%;
+  margin:-10px;
+  background-color:var(--opalgreen);
+  border-radius: 8px;
+  border: 4px solid var(--lightgreybrown);
+  color:var(--brownbear);
+  text-align:right;
+}
+main {
+  padding:2%;
+  margin:0em;
+  background-color:var(--pearlypink);
+  border-radius: 4px;
+  border: 2px solid var(--lightgreybrown);
+  line-height: 2.0;
+  font-size: 110%;
+  text-align: left;
+}
+/*
+section {}
+  article {}
+    #topic1 {}
+    #topic2 {}
+div {}
+aside {} */
+
+
+footer {
+  padding:1%;
+  margin-top:15px;
+  background-color:var(--bordeauxbrown);
+  border-radius: 4px;
+  border: 2px solid var(--browngrey);
+  color:var(--canary)
+}
+/* ----- Anchors ----- Text links */
+a {}
+a:link {
+  color: var(--forestgreen);
+}
+a:hover {
+  color: var(--mossgreen)
+}
+a:active {
+  color: var(--newblue)
+}
+/*a:visited {
+  color: var(--forestgreen)
+}*/
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+
+  margin-top: 0;
+  display:flex;
+  flex-flow: wrap;
+}
+nav a {
+  text-decoration:none;
+  background-color:var(--brownbear);
+  border:2px solid var(--canary);
+  border-radius:5px;
+  color:var(--canary);
+  padding:1%;
+  margin-top: -60px;
+}
+nav a:hover {
+  text-decoration:none;
+  background-color:var(--forestgreen);
+  border:2px solid var(--canary);
+  color:var(--canary);
+  padding: 1%;
+  border-radius: 5px;
+}
+.concepts a{
+  text-decoration:none;
+  background-color:var(--bordeauxbrown);
+  border:1px solid var(--canary);
+  border-radius:5px;
+  color:var(--canary);
+  padding:1%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.concepts a:hover {
+  text-decoration:none;
+  background-color:var(--opalgreen);
+  border:1px solid var(--lightgreybrown);
+  border-radius:5px;
+  color:var(--brownbear);
+  padding:1%;
+}
+/*  -----  Typography  ----- 
+p {}
+br {}
+ol, ul, dl {}
+li {}
+dt {}
+dd {}
+
+h1, h2, h3, h4, h5, h6 {} 
+h1 {}
+*/
+h2 {
+  margin: -20px 2px 10px ;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 300;
+  margin: 0 0 30px 0px;
+  text-align: center;
+}
+/*
+h4 {}
+h5 {}
+h6 {}
+
+abbr {}
+acronym {}
+address {}
+blockquote {}
+  q {}
+  cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+strong {}
+sub {}
+sup {}
+time {} 
+  ----- Coding or instructional typography ----- 
+pre {}
+code {}
+kbd {}
+samp {}
+var {}
+del {} 
+ins {} 
+
+/*  ----- Table ----- */
+table {
+  border-collapse:collapse;
+  width: 100%;
+  margin: 1px;
+  min-width: 90%;
+  max-width: 100%;
+}
+caption {
+  font-family:'Libre Caslon Text', serif;
+  background-color:var(--forestgreen);  
+  border:2px solid var(--bordeauxbrown);  
+  color:var(--canary);
+  padding:2px;
+  font-size: 110%;
+  border-radius: 2px;
+  margin:0px 2px -2px 0px;
+  width: 99.35%;
+  text-align: center;
+}
+
+/*
+thead {}
+tbody {}
+/*tfoot {}*/
+
+tr th {
+  font-family: 'Libre Caslon Text', sans-serif;
+  border: 2px solid var(--brownbear);
+  border-radius: 4px;
+  background-color:var(--lightgreybrown);
+  padding:1%;
+  text-align:left;
+  font-size: 110%;
+  color:var(--canary);
+} th:nth-child(3),
+  td:nth-child(3) {
+  text-align: right;
+  min-width: 30%;
+} 
+  
+
+tr td {
+  border:1px solid var(--bordeauxbrown);
+  padding: 1%;
+  font-size: 120%;
+  color:var(--brownbear);
+  background-color: var(--canary);
+};
+
+.staffTable table {
+  border-collapse:collapse;
+  width: 100%;
+  margin: 1px;
+  min-width: 30%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/*
+thead {}
+tbody {}
+/*tfoot {}*/
+
+.staffTable tr th {
+  font-family: 'Libre Caslon Text', sans-serif;
+  border: 2px solid var(--bordeauxbrown);
+  border-radius: 4px;
+  background-color:var(--lightgreybrown);
+  padding:1%;
+  text-align:left;
+  font-size: 110%;
+  font-weight: lighter;
+  color:var(--canary);
+}
+
+.staffTable tr td {
+  border:2px solid var(--bordeauxbrown);
+  padding: 2px;
+  font-size: 120%;
+  color:var(--brownbear);
+  background-color: var(--canary);
+}
+.staffTable tr:nth-child(even) td {
+  background-color: var(--yellowbeige);
+  }th:nth-child(3),
+  td:nth-child(3) {
+  text-align: left;
+  min-width: 30%;
+} 
+
+.vitaminTable tr th{
+  background-color: var(--forestgreen);
+  color: var(--canary);
+  text-align: left;
+  padding-left: 1em;
+  font-weight: 200;
+  padding: 1em;
+  min-width: 20%;
+  max-width: 100%;
+}
+
+.vitaminTable tr td {
+  background-color: var(--opalgreen);
+  font-size: 100%;
+  font-weight: 600;
+  padding: 6px;
+}
+.vitaminTable tr:nth-child(even) td {
+  background-color: var(--pearlypink);
+} 
+.vitaminTable caption {
+  background-color: var(--yellowbeige);
+  color: var(--brownbear);
+  width: 99.7%;
+  min-width: 20%;
+  max-width: 100%;
+}
+.vitaminTable button {
+  font-family: 'Libre Caslon Text', sans-serif;
+  border-radius: 5em;
+  background-color: var(--brownbear);
+  color: var(--canary);
+  padding: 5px;
+}
+.tableButton {
+  font-family: 'Libre Caslon Text', sans-serif;
+  font-size:90%;
+  background-color:var(--forestgreen);
+  color:var(--canary);
+  font-weight: bold;
+  padding:4%;
+  border-color: var(--brownbear);
+  border-radius: 90%;
+  margin: 0 4% 0 4%;
+  width:15%;
+  text-align: center;
+};
+
+/*
+colgroup {}
+data {}
+datalist {}
+
+
+/* ----- Media ----- 
+figure {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 2%;
+  padding:1%;
+  border: 2px solid var(--browngrey);
+  background-color: var(--browngrey);
+}
+  figcaption {
+  display: block;
+  color: var(--canary);
+  font-size:100%;
+  text-align:center;
+  padding: 2%;
+  border: 2% solid var(--browngrey);
+  background-color: var(--brownbear);
+  }
+  figure img {
+  width: 100%;
+  }
+*/
+.image-gallery {
+  padding:0 15px;
+  align-items:center;
+};
+
+/*
+svg {}
+picture {}
+  source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+*/
+/*
+.gallery figure {
+  margin: 2%;
+  padding:1%;
+  border: 2px solid var(--browngrey);
+  background-color: var(--browngrey);
+}
+.gallery img {
+  width: 100%;
+}
+.gallery figcaption {
+  text-align: center;
+  font-size: 90%;
+  line-height: 1.5;
+  color: var(--canary);
+  padding: 3%;
+  border: 2px solid var(--browngrey);
+  background-color: var(--brownbear);
+}
+
+/*----- Form -----*/
+
+form, button, input, select, textarea {
+  font-family: 'Libre Caslon Text', serif;
+  display:flexbox;
+}
+fieldset {
+  border: 4px solid var(--bordeauxbrown);
+  background-color: var(--salmony);
+  margin:1%;
+  padding:2%;
+  border-radius: 4px;
+}
+legend {
+  background-color: var(--brownbear) ;
+  border: 2px solid var(--brownbear);
+  color:var(--canary);
+  font-size: 120%;
+  border-radius: 4px;
+  padding: 1%;
+}
+/*
+button {
+  font-size:120%;
+  background-color:var(--brownbear);
+  color:var(--canary);
+  padding:3%;
+  border-radius: 6px;
+  margin:0;
+  width:100%;
+}
+*/
+input {
+  padding:2%;
+  font-size: 100%;
+  background-color: var(--yellowbeige);
+  color: var(--brownbear);
+}
+.vitaminTable input {
+  font-family: 'Libre Caslon Text', sans-serif;
+}
+label {
+  display: block;
+  margin: 2% 0 2% 1%;
+  font-size: 120%;
+  color: var(--bordeauxbrown)
+}
+
+/*
+output {}
+meter {}
+progress {}
+*/
+
+*:required {
+  border:4px solid green;
+}
+label.required:after {
+  content:" *";
+  color:red;
+}
+
+:focus {
+  background-color: var(--yellowbeige);
+  color: var(--brownbear)
+}
+
+*::placeholder {
+  color:rgb(96, 90, 90);
+}
+select{
+  padding: 1%;
+  font-size: 120%;
+  background-color: var(--yellowbeige);
+  margin-bottom: 4%;
+  color: var(--brownbear);
+}
+option {
+  padding: 0%;
+  font-size: 120%;
+  color: var(--brownbear);
+  margin-bottom: 4%
+}
+textarea {
+  background-color: var(--yellowbeige);
+  font-size: 120%;
+}
+.checkStyle {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+.radioButton {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+/*
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {}
+*/
+
+
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles ===== */ 
+@media print {}
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #ee61fb;
+}
+
+/*
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
