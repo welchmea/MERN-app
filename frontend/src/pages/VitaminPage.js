@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import VitaminTable from '../components/VitaminTable.js';
 import { BsPlusCircle } from "react-icons/bs";
-import { GiMedicinePills } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 
 function VitaminPage ({setVitamin}) {
@@ -35,7 +34,7 @@ function VitaminPage ({setVitamin}) {
     }, []);
     return (
         <>
-        <h2>Vitamins<GiMedicinePills/></h2>
+        <h2>Vitamins</h2>
         <p className="iconText"><Link to="/CreateVitamin"><i><BsPlusCircle className="icon"/></i></Link>Click here to add a new vitamin to your database!</p>
         <p className="databasePara">Keep track of the supplements you are consuming.</p>
         <VitaminTable vitamins={vitamins} updateVitamins={editOneVitamin} deleteVitamin={deleteVitaminById} />

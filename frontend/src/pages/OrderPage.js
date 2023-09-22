@@ -1,12 +1,11 @@
 import React from 'react';
-import ProductRow from '../components/ProductRow.js';
-import {BiPurchaseTag} from 'react-icons/bi'; 
+import ProductRow from '../components/ProductRow.js'; 
 
 function OrderPage({items}) {
     return (
         <>
-        <h2>Order Form<BiPurchaseTag/></h2>
-        <article>
+        <h2>Order Form</h2>
+        <article >
                 <h3>Choose the quantity for each product choice.</h3>
                 <p></p>
                     <table id="orderform">

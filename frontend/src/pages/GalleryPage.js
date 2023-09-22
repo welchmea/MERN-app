@@ -1,6 +1,5 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
-import {ImImages} from 'react-icons/im';
 
 const pictures = [
   
@@ -69,7 +68,7 @@ const pictures = [
  function GalleryPage() {
     return (
         <>
-        <h2>Gallery<ImImages/></h2>
+        <h2>Gallery</h2>
         <h3><p>A collection of photos displayed using React image gallery import.</p></h3>
         <article>
               <div className ="image-gallery">
