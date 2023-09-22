@@ -1,11 +1,10 @@
 import React from "react";
-import {MdOutlineTopic} from 'react-icons/md';
 import {BsArrowUpShort} from 'react-icons/bs';
 
 function FeaturePage() {
     return (
        <>
-            <h2>Web Development Concepts <MdOutlineTopic/></h2>
+            <h2>Web Development Concepts</h2>
 
             <nav className="concepts">
                 <a href="#servers">About Web Servers</a>
