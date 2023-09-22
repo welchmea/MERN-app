@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import StaffRow from "../components/StaffRow.js" ;
-import {MdPeople} from 'react-icons/md';
 
 function StaffPage () {
     const [results, setresults] = useState([]);
@@ -17,7 +16,7 @@ function StaffPage () {
 
     return (
         <>
-         <h2>Staff Information<MdPeople/></h2>
+         <h2>Staff Information</h2>
             <article>
             <p><button className="tableButton"id="click" onClick={url} value="populate">Populate the table</button>Click on the button to fill in the table with the respective information about staff members.</p> 
                 
