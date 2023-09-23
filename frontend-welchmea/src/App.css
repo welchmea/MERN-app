@@ -22,12 +22,12 @@
 
 /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
 body {       /* Can alternatively define in html {} or :root {} */
-  background-image: url(images/mt-hood-dusk-timberline-trail-view.jpeg);
+  background-image: url(images/computer-2048166_1280.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: top left;
   background-repeat: no-repeat;
-  color:var(--brownbear);
+  color:black;
   font-family: 'Libre Caslon Text', serif;
   font-weight: bold;
   margin: 0 auto;
@@ -42,7 +42,7 @@ body {       /* Can alternatively define in html {} or :root {} */
 }
 .icon {
   font-size: 150%;
-  color: var(--yellowbeige)
+  color:black;
 }
 .databasePara {
   text-align: center;
@@ -52,147 +52,88 @@ body {       /* Can alternatively define in html {} or :root {} */
 /*  ----- Page layout blocks -----  */
 header {
   padding:1%;
-  margin:-10px;
-  background-color:var(--opalgreen);
-  border-radius: 8px;
-  border: 4px solid var(--lightgreybrown);
-  color:var(--brownbear);
-  text-align:right;
+  margin-bottom: 2%;
+  color:black;
+  text-align:left;
+
 }
 main {
   padding:2%;
-  margin:0em;
-  background-color:var(--pearlypink);
+  background-color:rgba(255, 255, 255, 0.9);
   border-radius: 4px;
   border: 2px solid var(--lightgreybrown);
   line-height: 2.0;
   font-size: 110%;
   text-align: left;
 }
-/*
-section {}
-  article {}
-    #topic1 {}
-    #topic2 {}
-div {}
-aside {} */
-
 
 footer {
   padding:1%;
   margin-top:15px;
-  background-color:var(--bordeauxbrown);
-  border-radius: 4px;
-  border: 2px solid var(--browngrey);
-  color:var(--canary)
+  color:black
 }
 /* ----- Anchors ----- Text links */
-a {}
+
 a:link {
-  color: var(--forestgreen);
+  color: white;
 }
 a:hover {
-  color: var(--mossgreen)
+  color: white;
 }
 a:active {
   color: var(--newblue)
 }
-/*a:visited {
-  color: var(--forestgreen)
-}*/
 
 /*  ----- Navigation ----- Override text links for navigation only.  */
 nav {
-
-  margin-top: 0;
+  margin-top: 90px;
+  margin-bottom: 12px;
   display:flex;
   flex-flow: wrap;
+  font-size: 115%;
 }
 nav a {
   text-decoration:none;
-  background-color:var(--brownbear);
-  border:2px solid var(--canary);
-  border-radius:5px;
-  color:var(--canary);
-  padding:1%;
-  margin-top: -60px;
+  color:black;
+  padding:2%;
+  margin-top: 2px;
+  margin-bottom: -20px;
 }
 nav a:hover {
   text-decoration:none;
-  background-color:var(--forestgreen);
-  border:2px solid var(--canary);
-  color:var(--canary);
-  padding: 1%;
+  color: white;
+  padding: 2%;
   border-radius: 5px;
 }
+
+.concepts {
+  margin-top: -20px;
+  font-size: 80%;
+  padding: 2%;
+}
+
 .concepts a{
   text-decoration:none;
-  background-color:var(--bordeauxbrown);
-  border:1px solid var(--canary);
-  border-radius:5px;
-  color:var(--canary);
-  padding:1%;
-  margin-top: 5px;
+  color:black;
+  padding:2%;
   margin-bottom: 10px;
 }
 
 .concepts a:hover {
   text-decoration:none;
-  background-color:var(--opalgreen);
-  border:1px solid var(--lightgreybrown);
-  border-radius:5px;
-  color:var(--brownbear);
-  padding:1%;
+  color:blue;
+  padding:2%;
 }
-/*  -----  Typography  ----- 
-p {}
-br {}
-ol, ul, dl {}
-li {}
-dt {}
-dd {}
 
-h1, h2, h3, h4, h5, h6 {} 
-h1 {}
-*/
 h2 {
-  margin: -20px 2px 10px ;
   text-align: center;
 }
 
 h3 {
   font-weight: 300;
   margin: 0 0 30px 0px;
-  text-align: center;
+  text-align: left;
 }
-/*
-h4 {}
-h5 {}
-h6 {}
-
-abbr {}
-acronym {}
-address {}
-blockquote {}
-  q {}
-  cite {}
-em {}
-hr {}
-mark {}
-s {}
-span {}
-strong {}
-sub {}
-sup {}
-time {} 
-  ----- Coding or instructional typography ----- 
-pre {}
-code {}
-kbd {}
-samp {}
-var {}
-del {} 
-ins {} 
 
 /*  ----- Table ----- */
 table {
@@ -204,31 +145,24 @@ table {
 }
 caption {
   font-family:'Libre Caslon Text', serif;
-  background-color:var(--forestgreen);  
-  border:2px solid var(--bordeauxbrown);  
-  color:var(--canary);
+  color:black ;
   padding:2px;
   font-size: 110%;
   border-radius: 2px;
-  margin:0px 2px -2px 0px;
+  margin: 2px;
   width: 99.35%;
-  text-align: center;
+  text-align: left;
 }
-
-/*
-thead {}
-tbody {}
-/*tfoot {}*/
 
 tr th {
   font-family: 'Libre Caslon Text', sans-serif;
-  border: 2px solid var(--brownbear);
+  border: 2px solid black;
   border-radius: 4px;
-  background-color:var(--lightgreybrown);
+  background-color:rgb(227, 210, 185);
   padding:1%;
   text-align:left;
   font-size: 110%;
-  color:var(--canary);
+  color:black;
 } th:nth-child(3),
   td:nth-child(3) {
   text-align: right;
@@ -237,11 +171,11 @@ tr th {
   
 
 tr td {
-  border:1px solid var(--bordeauxbrown);
+  border:2px solid black;
   padding: 1%;
   font-size: 120%;
-  color:var(--brownbear);
-  background-color: var(--canary);
+  color:black;
+  background-color: rgb(244, 244, 220);
 };
 
 .staffTable table {
@@ -253,29 +187,23 @@ tr td {
   margin: 0 auto;
 }
 
-/*
-thead {}
-tbody {}
-/*tfoot {}*/
-
 .staffTable tr th {
   font-family: 'Libre Caslon Text', sans-serif;
-  border: 2px solid var(--bordeauxbrown);
-  border-radius: 4px;
-  background-color:var(--lightgreybrown);
+  border: 0;
+  background-color: white;
   padding:1%;
   text-align:left;
   font-size: 110%;
   font-weight: lighter;
-  color:var(--canary);
+  color:black;
 }
 
 .staffTable tr td {
-  border:2px solid var(--bordeauxbrown);
-  padding: 2px;
+  border:2px solid black;
+  padding: 4px;
   font-size: 120%;
-  color:var(--brownbear);
-  background-color: var(--canary);
+  color:black;
+  background-color: rgb(227, 210, 185);
 }
 .staffTable tr:nth-child(even) td {
   background-color: var(--yellowbeige);
@@ -284,10 +212,15 @@ tbody {}
   text-align: left;
   min-width: 30%;
 } 
+.staffTable a {
+  color: blue;
+}
+.staffTable a:hover {
+  color: white;
+}
 
 .vitaminTable tr th{
-  background-color: var(--forestgreen);
-  color: var(--canary);
+  color: black;
   text-align: left;
   padding-left: 1em;
   font-weight: 200;
@@ -305,141 +238,38 @@ tbody {}
 .vitaminTable tr:nth-child(even) td {
   background-color: var(--pearlypink);
 } 
-.vitaminTable caption {
-  background-color: var(--yellowbeige);
-  color: var(--brownbear);
-  width: 99.7%;
-  min-width: 20%;
-  max-width: 100%;
-}
+
 .vitaminTable button {
   font-family: 'Libre Caslon Text', sans-serif;
   border-radius: 5em;
-  background-color: var(--brownbear);
-  color: var(--canary);
-  padding: 5px;
+  background-color:rgb(104, 102, 102);
+  color: white;
+  padding: 8px;
+  font-size: 70%;
 }
 .tableButton {
   font-family: 'Libre Caslon Text', sans-serif;
-  font-size:90%;
-  background-color:var(--forestgreen);
-  color:var(--canary);
-  font-weight: bold;
-  padding:4%;
-  border-color: var(--brownbear);
-  border-radius: 90%;
+  font-size:100%;
+  background-color:rgb(104, 102, 102);
+  color:white;
+  padding:1%;
+  border-color: black;
+  border-radius: 2em;
   margin: 0 4% 0 4%;
   width:15%;
-  text-align: center;
 };
 
-/*
-colgroup {}
-data {}
-datalist {}
-
-
-/* ----- Media ----- 
-figure {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  margin: 2%;
-  padding:1%;
-  border: 2px solid var(--browngrey);
-  background-color: var(--browngrey);
-}
-  figcaption {
-  display: block;
-  color: var(--canary);
-  font-size:100%;
-  text-align:center;
-  padding: 2%;
-  border: 2% solid var(--browngrey);
-  background-color: var(--brownbear);
-  }
-  figure img {
-  width: 100%;
-  }
-*/
 .image-gallery {
   padding:0 15px;
   align-items:center;
 };
 
-/*
-svg {}
-picture {}
-  source {}
-iframe {}
-video {}
-audio {}
-embed {}
-object {}
 
-.gallery {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-}
-*/
-/*
-.gallery figure {
-  margin: 2%;
-  padding:1%;
-  border: 2px solid var(--browngrey);
-  background-color: var(--browngrey);
-}
-.gallery img {
-  width: 100%;
-}
-.gallery figcaption {
-  text-align: center;
-  font-size: 90%;
-  line-height: 1.5;
-  color: var(--canary);
-  padding: 3%;
-  border: 2px solid var(--browngrey);
-  background-color: var(--brownbear);
-}
-
-/*----- Form -----*/
-
-form, button, input, select, textarea {
-  font-family: 'Libre Caslon Text', serif;
-  display:flexbox;
-}
-fieldset {
-  border: 4px solid var(--bordeauxbrown);
-  background-color: var(--salmony);
-  margin:1%;
-  padding:2%;
-  border-radius: 4px;
-}
-legend {
-  background-color: var(--brownbear) ;
-  border: 2px solid var(--brownbear);
-  color:var(--canary);
-  font-size: 120%;
-  border-radius: 4px;
-  padding: 1%;
-}
-/*
-button {
-  font-size:120%;
-  background-color:var(--brownbear);
-  color:var(--canary);
-  padding:3%;
-  border-radius: 6px;
-  margin:0;
-  width:100%;
-}
-*/
 input {
   padding:2%;
   font-size: 100%;
   background-color: var(--yellowbeige);
-  color: var(--brownbear);
+  color: black;
 }
 .vitaminTable input {
   font-family: 'Libre Caslon Text', sans-serif;
@@ -450,12 +280,6 @@ label {
   font-size: 120%;
   color: var(--bordeauxbrown)
 }
-
-/*
-output {}
-meter {}
-progress {}
-*/
 
 *:required {
   border:4px solid green;
@@ -501,30 +325,6 @@ textarea {
   gap: 0.5em;
 }
 
-/*
-.floatright {}
-.floatleft {}
-.center-middle {}
-
-.ten {}
-.twenty {}
-.thirty {}
-.forty {}
-.fifty {}
-.sixty {}
-.seventy {}
-.eighty {}
-
-.radius {}
-.circle {}
-.boxshadow {}
-.tshadow {} 
-.gradient {}
-.shape {}
-*/
-
-
-
 @keyframes App-logo {}
 
 /*   ===== TABLET  media query overrides mobile styles ===== */
@@ -535,42 +335,3 @@ textarea {
 
 /*   ===== PRINT  media query overrides previous styles ===== */ 
 @media print {}
-/*.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #ee61fb;
-}
-
-/*
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}*/

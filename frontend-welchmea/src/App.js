@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import {GiMountains} from 'react-icons/gi';
-
 import products from './data/products.js';
 
 
@@ -24,7 +22,7 @@ function App() {
     <>
     <BrowserRouter>
       <header className='App'>
-        <h1 id="top">Meagan Welch: Full-Stack MERN app<GiMountains/></h1>
+        <h1 id="top">Meagan Welch: Full-Stack MERN app</h1>
         <Nav/>
         <main>
           <section>
