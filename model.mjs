@@ -1,9 +1,12 @@
 import mongoose from 'mongoose';
 import 'dotenv/config';
 
-mongoose.connect(
-    process.env.MONGODB_URI,
+const uri = process.env.MONGODB_URI
+
+mongoose.connect(uri, 
     { useNewUrlParser: true }
+    .then(() => console.log('Connected!'))
+    .catch (()=> ('Error'))
 );
 const vitamin_db = mongoose.connection;
 
@@ -36,22 +39,22 @@ const createVitamin = async (name, date, purpose, unit_day) => {
 }
 
 const retrieveVitamins = async () => {
-    const query = Vitamin.find();
+    const query = test.Vitamin.find();
     return query.exec();
 }
 
 const retrieveVitaminByID = async (_id) => {
-    const query = Vitamin.findById({_id: _id});
+    const query = test.Vitamin.findById({_id: _id});
     return query.exec();
 }
 
 const deleteVitaminById = async (_id) => {
-    const result = await Vitamin.deleteOne({_id: _id});
+    const result = await test.Vitamin.deleteOne({_id: _id});
     return  result.deletedCount;
 };
 
 const updateVitamin = async (_id, name, date, purpose, unit_day) => {
-    const result = await Vitamin.replaceOne({_id: _id }, {
+    const result = await test.Vitamin.replaceOne({_id: _id }, {
         name:name,
         date:date,
         purpose:purpose,
