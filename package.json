@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Supplements",
   "main": "controller.js",
-  "proxy": "http://localhost:3000",
   "scripts": {
     "start": "nodemon controller.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
