@@ -1,10 +1,12 @@
 import mongoose from 'mongoose';
 import 'dotenv/config';
+require('dotenv').config();
 
-mongoose.connect(process.env.MONGODB_URI, 
+mongoose.connect(process.env.MONGODB_URI || process.env.MONGODB_CONNECT_STRING,
     { useNewUrlParser: true }
 );
 const vitamin_db = mongoose.connection;
+
 
 // Confirm that the database has connected and print a message in the console.
 vitamin_db.once("open", (err) => {
