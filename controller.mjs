@@ -1,8 +1,8 @@
 import 'dotenv/config';
 import express from 'express';
 import * as vitamins from './model.mjs';
+import path from 'path';
 
-const path = require('path');
 const PORT = process.env.PORT;
 const app = express();
 app.use(express.json()); 
