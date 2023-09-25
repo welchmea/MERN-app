@@ -2,17 +2,16 @@
   "name": "mernapp",
   "version": "1.0.0",
   "description": "Supplements",
-  "main": "controller.js",
+  "main": "controller.mjs",
   "scripts": {
     "start": "nodemon controller.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
-
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Meagan Welch",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^7.0.2",
     "nodemon": "^2.0.21",
