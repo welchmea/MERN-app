@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 import 'dotenv/config';
-require('dotenv').config();
 
 mongoose.connect(process.env.MONGODB_URI || process.env.MONGODB_CONNECT_STRING,
     { useNewUrlParser: true }
