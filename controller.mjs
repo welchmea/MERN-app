@@ -1,20 +1,20 @@
 import 'dotenv/config';
 import express from 'express';
 import * as vitamins from './model.mjs';
-import path from 'path';
+// import path from 'path';
 
 const PORT = process.env.PORT;
 const app = express();
 app.use(express.json()); 
 
-if(process.env.NODE_ENV === 'production'){    
-    app.use(express.static('frontend/build'))  // set static folder 
-    //returning frontend for any route other than api 
-    app.get('*',(req, res)=>{     
-        res.sendFile (path.resolve(__dirname,'frontend','build',         
-                      'index.html' ));    
-    });
-  }
+// if(process.env.NODE_ENV === 'production'){    
+//     app.use(express.static('frontend/build'))  // set static folder 
+//     //returning frontend for any route other than api 
+//     app.get('*',(req, res)=>{     
+//         res.sendFile (path.resolve(__dirname,'frontend','build',         
+//                       'index.html' ));    
+//     });
+//   }
 
 app.post ('/VitaminPage', (req,res) => { 
     vitamins.createVitamin(
