@@ -6,7 +6,7 @@ function FeaturePage() {
   useBackgroundImage("images/krzysztof-kowalik-9pFK1FR_5KQ-unsplash.jpg");
   return (
     <>
-      <div className="img-div-main" style={{fontSize: 40, height: 5920}}>
+      <div className="img-div-main">
         <p >
         “Design creates culture. Culture shapes values. Values determine the future.”
         </p>
