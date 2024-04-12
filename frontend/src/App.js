@@ -21,6 +21,7 @@ function App() {
         <header className="App">
           <h1 id="top">Full-Stack MERN app</h1>
           <Nav />
+          </header>
           <main>
             <section>
               <Routes>
@@ -44,7 +45,6 @@ function App() {
               </Routes>
             </section>
           </main>
-        </header>
         <footer>
           <p>&copy; 2023 Meagan Welch</p>
         </footer>
