@@ -61,16 +61,10 @@ header {
   font-size: x-large;
 }
 
-/* main {
-  padding: 2%;
-  background-color: white;
-  border-radius: 8px;
-  border: 2px solid black;
-  line-height: 2;
-  font-size: 110%;
-  text-align: left;
-
-} */
+main {
+  display: flex;
+  flex-direction: row;
+} 
 .body-text-in-main {
   padding: 2%;
   background-color: white;
@@ -79,8 +73,6 @@ header {
   line-height: 2;
   font-size: 110%;
   text-align: left;
-  width: 60%;
-  float: right;
 }
 .img-div-main {
   display: flex;
@@ -93,9 +85,6 @@ header {
   border: 2px solid black;
   font-size: 350%;
   text-align: center;
-  width: 30%;
-  float: left;
-  height: 96vh;
 }
 .icon-hover-main-transform:hover{
   transform: scale(1.30);
