@@ -1,7 +1,9 @@
 import React from 'react';
 import ProductRow from '../components/ProductRow.js'; 
+import { useBackgroundImage } from '../components/useBackgroundImage.js';
 
 function OrderPage({items}) {
+    useBackgroundImage('images/example.jpg')
     return (
         <>
         <h2>Order Form</h2>

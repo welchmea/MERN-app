@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import StaffRow from "../components/StaffRow.js" ;
+import { useBackgroundImage } from '../components/useBackgroundImage.js';
 
 function StaffPage () {
+    useBackgroundImage('images/chirayu-trivedi-feGMDDR3BlE-unsplash.jpg')
     const [results, setresults] = useState([]);
     const url = () => {
        fetch('https://randomuser.me/api/?results=10') 

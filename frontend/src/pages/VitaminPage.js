@@ -4,8 +4,10 @@ import { useEffect } from "react";
 import VitaminTable from '../components/VitaminTable.js';
 import { BsPlusCircle } from "react-icons/bs";
 import { Link } from 'react-router-dom';
+import { useBackgroundImage } from "../components/useBackgroundImage.js";
 
 function VitaminPage ({setVitamin}) {
+    useBackgroundImage('images/amritansh-dubey-5z7vN1QrQwU-unsplash.jpg')
     const navigate = useNavigate();
 
     const [vitamins, setVitamins] = useState([]);

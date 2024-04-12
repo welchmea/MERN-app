@@ -13,7 +13,7 @@
   --schoolbus: rgba(220, 203, 161, 0.8);
   --bluesky: rgb(119, 165, 188);
   --algae: rgba(11, 103, 99, 0.7);
-  --forestgreen: rgba(19, 63, 60, 0.8);
+  --forestgreen: rgb(1, 30, 1);
   --mossgreen: rgb(78, 156, 198);
   --opalgreen: rgb(117, 152, 135);
   --brownbear: rgb(51, 29, 24);
@@ -22,11 +22,12 @@
 /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
 body {
   /* Can alternatively define in html {} or :root {} */
-  /* background-image: url(images/pawel-czerwinski-LAadii3dGQM-unsplash.jpg); */
+  /* background-image: url(./images/krzysztof-kowalik-9pFK1FR_5KQ-unsplash.jpg); */
   background-size: cover;
   background-attachment: fixed;
-  background-position: top left;
+  background-position: center;
   background-repeat: no-repeat;
+  background-color: var(--forestgreen);
   color: black;
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
@@ -56,6 +57,7 @@ header {
   background-color: rgba(235, 235, 227, 0.5);
   color: black;
   border-radius: 8px;
+  margin-bottom: 2px;
 }
 
 main {
@@ -71,7 +73,7 @@ main {
 footer {
   padding: 6px;
   margin-top: 20px;
-  background-color: rgb(16, 57, 64);
+  background-color: var(--forestgreen);
   border-radius: 8px;
   color: white;
 }
@@ -115,25 +117,6 @@ nav a:hover {
   -webkit-border-radius: 8px;
 }
 
-.concepts a {
-  text-decoration: none;
-  background-color: rgb(16, 57, 64);
-  border: 1px solid white;
-  border-radius: 2px;
-  color: white;
-  padding: 1%;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.concepts a:hover {
-  text-decoration: none;
-  background-color: var(--opalgreen);
-  color: black;
-  padding: 1%;
-  transition: ease-in-out;
-  transform: scale(1.1);
-}
 /*  -----  Typography  ----- */
 
 h2 {

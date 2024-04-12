@@ -1,6 +1,8 @@
 import React from "react";
+import { useBackgroundImage } from "../components/useBackgroundImage";
 
 function HomePage() {
+    useBackgroundImage('images/pawel-czerwinski-LAadii3dGQM-unsplash.jpg')
     return (
        <>
             <h2>Web Development Portfolio Project</h2>

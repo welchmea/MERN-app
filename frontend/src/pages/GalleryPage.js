@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
+import { useBackgroundImage } from '../components/useBackgroundImage';
 
 const pictures = [
   
@@ -66,6 +67,7 @@ const pictures = [
     },
 ]
  function GalleryPage() {
+  useBackgroundImage('images/pawel-czerwinski-pa-_g6gR_CM-unsplash.jpg')
     return (
         <>
         <h2>Gallery</h2>
