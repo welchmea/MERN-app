@@ -3,7 +3,7 @@ import React from "react";
 function HomePage() {
     return (
        <>
-            <h2>CS 290: Web Development Portfolio Project</h2>
+            <h2>Web Development Portfolio Project</h2>
             <article>
                 <p className="databasePara">There were multiple technologies utilized to build this full-stack MERN app.</p>
                     <p>A MERN stack is made up of MongoDB, Express, React, and Node. </p>

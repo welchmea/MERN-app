@@ -7,7 +7,7 @@ function OrderPage({items}) {
         <h2>Order Form</h2>
         <article >
                 <h3>Choose the quantity for each product choice.</h3>
-                <p></p>
+                <div className='center-table-div'>
                     <table id="orderform">
                             <caption><p>Available products:</p></caption>
                             <thead>
@@ -22,6 +22,7 @@ function OrderPage({items}) {
                             {items.map((item, index) => <ProductRow row={item} key={index} />)}
                             </tbody>
                         </table>
+                        </div>
             </article> 
             </>
     );

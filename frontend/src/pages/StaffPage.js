@@ -18,8 +18,12 @@ function StaffPage () {
         <>
          <h2>Staff Information</h2>
             <article>
-            <p><button className="tableButton"id="click" onClick={url} value="populate">Populate the table</button>Click on the button to fill in the table with the respective information about staff members.</p> 
-                
+                <div className=''>
+                <button className="tableButton"id="click" onClick={url} value="populate">Populate the table</button>
+                <p>Click on the button to fill in the table with the respective information about staff members.</p>
+                </div>
+
+                <div className='center-table-div'>
                 <table className="staffTable">
                     <thead>
                         <tr>
@@ -33,6 +37,7 @@ function StaffPage () {
                     {results.map((tableId, index) => <StaffRow tableId={tableId} key={index} />)}
                     </tbody>
                 </table>
+                </div>
             </article>
             </>
     );
