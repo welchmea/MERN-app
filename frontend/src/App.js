@@ -19,7 +19,7 @@ function App() {
     <>
       <BrowserRouter>
         <header className="App">
-          <h1 id="top">Full-Stack MERN app</h1>
+          <h1 id="top">FULL-STACK MERN</h1>
           <Nav />
           </header>
           <main>
