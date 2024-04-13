@@ -64,12 +64,13 @@ header {
 main {
   display: flex;
   flex-direction: row;
+  place-content: center;
 } 
 .body-text-in-main {
   padding: 2%;
   background-color: white;
   border-radius: 8px;
-  border: 2px solid black;
+  border: 2px solid  rgba(235, 235, 227, 0.8);
   line-height: 2;
   font-size: 110%;
   text-align: left;
@@ -97,8 +98,6 @@ footer {
   background-color: var(--forestgreen);
   border-radius: 8px;
   color: white;
-  float: inline-end;
-  width: 100%;
   margin-bottom: 8px;
 }
 /* ----- Anchors ----- Text links */
@@ -241,11 +240,6 @@ button:hover {
   color: white;
   transform: scale(1.10);
   transition: ease-in-out;
-}
-
-.image-gallery {
-  padding: 0 15px;
-  align-items: center;
 }
 
 /*----- Form -----*/

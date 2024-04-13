@@ -6,6 +6,7 @@ function OrderPage({items}) {
     useBackgroundImage('images/example.jpg')
     return (
         <>
+        <div className='body-text-in-main'>
         <h2>Order Form</h2>
         <article >
                 <h3>Choose the quantity for each product choice.</h3>
@@ -26,6 +27,7 @@ function OrderPage({items}) {
                         </table>
                         </div>
             </article> 
+            </div>
             </>
     );
 };

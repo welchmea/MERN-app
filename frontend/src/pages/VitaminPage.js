@@ -36,10 +36,12 @@ function VitaminPage ({setVitamin}) {
     }, []);
     return (
         <>
+        <div className="body-text-in-main">
         <h2>Vitamins</h2>
         <p className="iconText"><Link to="/CreateVitamin"><i><BsPlusCircle className="icon"/></i></Link>Click here to add a new vitamin to your database!</p>
         <p className="databasePara">Keep track of the supplements you are consuming.</p>
         <VitaminTable vitamins={vitamins} updateVitamins={editOneVitamin} deleteVitamin={deleteVitaminById} />
+        </div>
         </>
     );
 }

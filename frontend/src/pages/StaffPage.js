@@ -18,6 +18,7 @@ function StaffPage () {
 
     return (
         <>
+          <div className='body-text-in-main'>
          <h2>Staff Information</h2>
             <article>
                 <div className=''>
@@ -41,6 +42,7 @@ function StaffPage () {
                 </table>
                 </div>
             </article>
+            </div>
             </>
     );
 }

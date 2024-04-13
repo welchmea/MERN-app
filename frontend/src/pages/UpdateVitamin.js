@@ -33,6 +33,7 @@ export const UpdateVitamin = ({ updateVitamins }) => {
 
     return (
         <>
+        <div className='body-text-in-main'>
         <article>
             <h2>Update Vitamins</h2>
             <p className='databasePara'>You can edit a supplement here if you have found discrepancies in the data.</p>
@@ -92,6 +93,7 @@ export const UpdateVitamin = ({ updateVitamins }) => {
                     </tbody> 
                     </table> 
             </article>
+            </div>
         </>
     );
 }

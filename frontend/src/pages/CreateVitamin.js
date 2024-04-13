@@ -33,6 +33,7 @@ export const CreateVitamin = () => {
   };
   return (
     <>
+    <div className="body-text-in-main">
       <h2>Add Vitamins</h2>
       <article>
         <p className="databasePara">
@@ -113,6 +114,7 @@ export const CreateVitamin = () => {
         </table>
         </div>
       </article>
+      </div>
     </>
   );
 };
