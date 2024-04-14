@@ -19,8 +19,8 @@ function GalleryPage() {
           <Carousel>
             {pictures.map((key) => (
               <div>
-                <img src={key.original} alt={key.description} />
-                <p style={{color: 'white'}}>{key.description}</p>
+                <img style={{}} src={key.original} alt={key.description} />
+                <p>{key.description}</p>
               </div>
             ))}
           </Carousel>
