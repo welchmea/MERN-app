@@ -3,7 +3,7 @@ import ProductRow from '../components/ProductRow.js';
 import { useBackgroundImage } from '../components/useBackgroundImage.js';
 
 function OrderPage({items}) {
-    useBackgroundImage('images/example.jpg')
+    useBackgroundImage('images/chirayu-trivedi-Bogur-lSk3w-unsplash.jpg')
     return (
         <>
         <div className='body-text-in-main'>

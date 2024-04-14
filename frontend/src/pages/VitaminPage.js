@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { useBackgroundImage } from "../components/useBackgroundImage.js";
 
 function VitaminPage ({setVitamin}) {
-    useBackgroundImage('images/amritansh-dubey-5z7vN1QrQwU-unsplash.jpg')
+    useBackgroundImage('images/denis-sebastian-tamas-Prsu103pTio-unsplash.jpg')
     const navigate = useNavigate();
 
     const [vitamins, setVitamins] = useState([]);
@@ -38,8 +38,8 @@ function VitaminPage ({setVitamin}) {
         <>
         <div className="body-text-in-main">
         <h2>Vitamins</h2>
-        <p className="iconText"><Link to="/CreateVitamin"><i><BsPlusCircle className="icon"/></i></Link>Click here to add a new vitamin to your database!</p>
-        <p className="databasePara">Keep track of the supplements you are consuming.</p>
+        <p><Link to="/CreateVitamin"><i><BsPlusCircle className="icon"/></i></Link>Click here to add a new vitamin to your database!</p>
+        <p>Keep track of the supplements you are consuming.</p>
         <VitaminTable vitamins={vitamins} updateVitamins={editOneVitamin} deleteVitamin={deleteVitaminById} />
         </div>
         </>

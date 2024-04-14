@@ -6,7 +6,7 @@ function VitaminTable ({vitamins, updateVitamins, deleteVitamin}) {
         <>
          <h2>Database</h2>
             <article>
-            <p className="databasePara">Update or delete information about vitamins and supplements in this table.</p>
+            <p className="">Update or delete information about vitamins and supplements in this table.</p>
             <div className="center-table-div">
                 <table className="vitaminTable">
                     <thead>

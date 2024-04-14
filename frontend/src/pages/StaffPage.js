@@ -3,7 +3,7 @@ import StaffRow from "../components/StaffRow.js" ;
 import { useBackgroundImage } from '../components/useBackgroundImage.js';
 
 function StaffPage () {
-    useBackgroundImage('images/chirayu-trivedi-feGMDDR3BlE-unsplash.jpg')
+    useBackgroundImage('images/pawel-czerwinski-Moiprruv4Rw-unsplash.jpg')
     const [results, setresults] = useState([]);
     const url = () => {
        fetch('https://randomuser.me/api/?results=10') 

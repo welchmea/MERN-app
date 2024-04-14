@@ -36,7 +36,7 @@ export const CreateVitamin = () => {
     <div className="body-text-in-main">
       <h2>Add Vitamins</h2>
       <article>
-        <p className="databasePara">
+        <p >
           Fill in the following fields to add a new entry to your database.
         </p>
         <form
