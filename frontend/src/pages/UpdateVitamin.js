@@ -29,7 +29,7 @@ export const UpdateVitamin = ({ updateVitamins }) => {
             const errMessage = await response.json();
             alert(`A error has occurred, the vitamin was not able to be updated. See status code = ${response.status}. ${errMessage.Error}`);
         }
-        navigate("/VitaminPage");
+        navigate("/vitamin-page");
     }
 
     return (

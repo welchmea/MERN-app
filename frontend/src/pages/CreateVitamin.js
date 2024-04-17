@@ -37,16 +37,16 @@ export const CreateVitamin = () => {
         <h2>Add Vitamins</h2>
 
         <p>Fill in the following fields to add a new entry to your database.</p>
-         <form
+        {/* <form
           onSubmit={(e) => {
             e.preventDefault();
           }}
-        ></form> 
+        ></form> */}
         <div className="center-table-div">
           <table className="vitaminTable" id="vitamins">
-             <caption>
+            <caption>
               <p>Which Vitamins would you like to add?</p>
-            </caption> 
+            </caption>
             <thead>
               <tr>
                 <th className="required">Vitamin Name</th>
