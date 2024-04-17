@@ -38,7 +38,7 @@ function VitaminPage ({setVitamin}) {
         <>
         <div className="body-text-in-main">
         <h2>Vitamins</h2>
-        <p><Link to="/CreateVitamin"><i><BsPlusCircle className="icon"/></i></Link>Click here to add a new vitamin to your database!</p>
+        <p><Link to="/create-vitamin"><i><BsPlusCircle className="icon"/></i></Link>Click here to add a new vitamin to your database!</p>
         <p>Keep track of the supplements you are consuming.</p>
         <VitaminTable vitamins={vitamins} updateVitamins={editOneVitamin} deleteVitamin={deleteVitaminById} />
         </div>

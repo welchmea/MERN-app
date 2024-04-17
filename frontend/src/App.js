@@ -26,20 +26,20 @@ function App() {
             <section>
               <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/FeaturePage" element={<FeaturePage />} />
-                <Route path="/GalleryPage" element={<GalleryPage />} />
+                <Route path="/feature-page" element={<FeaturePage />} />
+                <Route path="/gallery-page" element={<GalleryPage />} />
                 <Route
-                  path="/OrderPage"
+                  path="/order-page"
                   element={<OrderPage items={products} />}
                 />
-                <Route path="/StaffPage" element={<StaffPage />} />
-                <Route path="/CreateVitamin" element={<CreateVitamin />} />
+                <Route path="/staff-page" element={<StaffPage />} />
+                <Route path="/create-vitamin" element={<CreateVitamin />} />
                 <Route
-                  path="/VitaminPage"
+                  path="/vitamin-page"
                   element={<VitaminPage setVitamin={setupdateVitamins} />}
                 />
                 <Route
-                  path="/UpdateVitamin"
+                  path="/update-vitamin"
                   element={<UpdateVitamin updateVitamins={vitamins} />}
                 />
               </Routes>

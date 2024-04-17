@@ -7,18 +7,17 @@ function FeaturePage() {
   return (
     <>
       <div className="img-div-main">
-        <p >
-        “Design creates culture. Culture shapes values. Values determine the future.”
-        </p>
         <p>
-        — Robert L. Peters, Graphic Designer
-          </p>
+          “Design creates culture. Culture shapes values. Values determine the
+          future.”
+        </p>
+        <p>— Robert L. Peters, Graphic Designer</p>
       </div>
       <div className="body-text-in-main">
         <h2>Web Development Concepts</h2>
 
         <nav className="concepts">
-          <a href="#servers">About Web Servers</a>
+          <a href="#servers">Web Servers</a>
           <a href="#frontdesign">Front End Design</a>
           <a href="#images">Optimizing Images</a>
           <a href="#cascade">Cascading Style Sheets</a>
@@ -28,51 +27,36 @@ function FeaturePage() {
         </nav>
 
         <article id="servers">
-          <h3>About Web Servers</h3>
+          <h3>Web Servers</h3>
+
           <p>
-            {" "}
-            This page was created using an IDE, Visual Studio Code (VS). The
-            starting point was to open Finder on a MacBook Air. Navigate to
-            Documents, and create a new folder titled: CS 290. Add the
-            subfolder: a1-welchmea. Then in VS, open the folder. Add a new file
-            to a1-welchmea, called index.html. HTML tags were then added to the
-            file, along with text. Once the file was saved, it was opened in a
-            web browser by clicking on the file in Finder. An index.html file is
-            typically the default homepage of a website, when no other requests
-            are made to the server. In this case, it is just a local file on my
-            computer. It was opened in a web browser through a default setting.
+            A Web server stores the data used to build the website. For example
+            this application has files in the form of CSS, JavaScript, and HTML.
+            The web server storing copies of these files is Heroku. The platform
+            storing the data files connects to the internet and supports the
+            exchange of data amongst devices.
           </p>
 
           <p>
-            {" "}
-            The file will be added to a web server. Before this occurs, in the
-            browser, navigate to the Web Developer tools. Click on the Network
-            tab, find Name, and locate the index.html file that was created.
-            Here you will also find the names main.js and main.css. The only
-            name that has the status, as OK (200), is the index.html. The other
-            two are showing ERR_FILE_NOT_FOUND (404).
-          </p>
-
-          <p>
-            {" "}
-            The file has now been added to the OSU engineering web server.
-            Again, navigate to the Web Developer tools, click on the Network
-            tab. Look under Name and see that there is a new name, favicon.ico.
-            The status is OK (200). The favicon.ico has status OK because the
-            file has been successfully added to the web server, and the web
-            server is displaying the representative icon for its page. The
-            reason main.js and main.css are showing status 404 is that the files
-            in which they would be located have not been created or added to the
-            web server.
-          </p>
-
-          <p>
-            {" "}
-            The components of the URL web file are:
-            <strong>schema - </strong> HTTPS:
-            <strong>subdomain - </strong> `//web.engr`
-            <strong>host domain - </strong> oregonstate.edu
-            <strong>resources - </strong> /~welchmea/a1-welchmea/
+            As this application uses a RESTful style API, it will organize
+            resources into a set of unique URI's that differentiate services on
+            the server
+            <ul>
+              URI: Uniform Resource Identifer
+              <li>URN</li>
+              <li>URL: Most websites utilize this</li>
+              The components of the URL web file are:
+              <li>schema - HTTPS:</li>
+              <li>subdomain - //web-dev-mern-bef2b172b674</li>
+              <li>host domain - herokuapp.com</li>
+              <li>resources - /feature-page</li>
+              Best URI Practices: Standardized
+              <li>forward slashes indicate hierarchy </li>
+              <li>plural nouns for branches</li>
+              <li>begin with lower case</li>
+              <li>no file extensions</li>
+              <li>hyhens for multiple words</li>
+            </ul>
           </p>
         </article>
         <article id="frontdesign">
