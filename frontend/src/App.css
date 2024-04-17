@@ -90,6 +90,21 @@ footer {
   margin-bottom: 8px;
 }
 
+ul {
+  margin-bottom: 2%;
+}
+
+ul > li {
+  margin-left:4em;
+  margin-bottom: 1%;
+}
+ul > li:first-child {
+  margin-top:1%;
+}
+
+li > li {
+  margin-left: 4em;
+}
 button {
   font-family: "Roboto Mono", monospace;
   background-color: black;
