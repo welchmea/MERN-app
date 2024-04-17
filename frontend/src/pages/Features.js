@@ -22,7 +22,6 @@ function FeaturePage() {
           <a href="#images">Optimizing Images</a>
           <a href="#cascade">Cascading Style Sheets</a>
           <a href="#forms">Forms</a>
-          <a href="#express">Express</a>
           <a href="#dom">DOM</a>
         </nav>
 
@@ -73,9 +72,8 @@ function FeaturePage() {
             Frontend design marries the technical aspects of a product with the
             visual or interactive components. There is an entire industry,
             usability engineering, centered around researching, adapting, and
-            creating products that are easier to use. Frontend design is one of
-            the tools that is used to accomplish this goal. A familiar example
-            is using certain colors or images to make an aesthetically appealing
+            creating products that are easier to use. A familiar example is
+            using certain colors or images to make an aesthetically appealing
             website. Then, giving your website a clear way to navigate to the
             rest of the site, ensures people will feel comfortable using your
             site. This helps to create a positive association and increases the
@@ -84,66 +82,30 @@ function FeaturePage() {
 
           <p>
             {" "}
-            <strong>The five "E"s of usability are:</strong>
-          </p>
-          <dl>
-            <dt>
-              <em>Effective:</em>
-            </dt>
-            <dd>Whether the user achieves their goal.</dd>
-            <dt>
-              <em>Efficient:</em>
-            </dt>
-            <dd>How quickly a user achieves their goals.</dd>
-            <dt>
-              <em>Easy to Navigate:</em>
-            </dt>
-            <dd>
-              The user should not have a hard time determining how to use the
-              product.{" "}
-            </dd>
-            <dt>
-              <em>Error-Free:</em>
-            </dt>
-            <dd>
-              The user should accomplish their end-results with minimal errors.
-              If there are errors, they have been anticipated by the developer.
-            </dd>
-            <dt>
-              <em>Enjoyable:</em>
-            </dt>
-            <dd>
-              The product should be engaging to the user, and leave them wanting
-              to use it again.
-            </dd>
-          </dl>
-
-          <p>
-            {" "}
-            Page layout tags are essentially meaningful descriptions of the
-            different sections of your content. They are used inside the body
-            tags. So, they relate to the visual part of your content.
-            Stylistically, they divide the content by blocks, with a new line
-            added before and after. They are a new feature of HTML 5. The
-            purpose of creating these semantic tags is to make it easier for
-            screen readers and search engines to process the developer's
-            content. Previously, the tags were generic and did not provide any
-            clarity as to the type of content contained therein.{" "}
-          </p>
-
-          <p>
-            {" "}
-            Anchors can be used in a navigation tag to link from one page to
-            another. If used in this context, the syntax is nesting href="URL"
-            between the opening anchor tag. A text between the opening and
-            closing anchor tags acts as a description of the link, and will
-            appear as a button on the page telling the user where they will be
-            directed if they click on that link. Anchors can also be used in
-            texts to link from content to content, either on the same page or
-            external sites. To use an anchor in this way, the same syntax of
-            href="URL" will apply, but an attribute ID will need to be added to
-            the desired linked element, as well as adding #idattribute to the
-            end of the URL.
+            <ul>
+              The five "E"s of usability are:
+              <li>
+                {" "}
+                <em>Effective:</em> Whether the user achieves their goal.
+              </li>
+              <li>
+                <em>Efficient:</em> How quickly a user achieves their goals.
+              </li>
+              <li>
+                {" "}
+                <em>Easy to Navigate:</em> The user should not have a hard time
+                determining how to use the product.
+              </li>
+              <li>
+                <em>Error-Free:</em> The user should accomplish their
+                end-results with minimal errors. If there are errors, they have
+                been anticipated by the developer.
+              </li>
+              <li>
+                <em>Enjoyable:</em> The product should be engaging to the user,
+                and leave them wanting to use it again.
+              </li>
+            </ul>
           </p>
         </article>
 
@@ -171,38 +133,37 @@ function FeaturePage() {
             A descriptive file name will include who, what, when, and where.
             This is to help search engines locate and display your photos.
             Making the file size as small as it can go, while still displaying
-            the image properly, will help with page load times. Another way to
-            help with load times is to crop the photo to the exact dimensions.
-            Consider where the image will be displayed, the image should be
-            wholly visible to the user without having to scroll. Other ways to
+            the image properly, will help with page load times. Other ways to
             ensure the quality of your images, are by choosing the correct file
             format, discussed more below, considering the resolution of the
             device that the image will be displayed, and choosing the correct
-            color mode. Color mode is based on the file format of the image. RGB
-            is for .PNG, .JPG, .SVG, while WebP and Indexed are for .GIF.
+            color mode.
           </p>
 
           <p>
-            <strong>File formats:</strong>
-          </p>
-          <p>
-            <em>JPG: </em>these types of files are used for photography, they
-            can compress into smaller sizes, and remain rectangular.
-          </p>
-          <p>
-            <em>WebP: </em>these files are similar to JPG, except transparent
-            backgrounds can be applied to this format.{" "}
-          </p>
-          <p>
-            <em>SVG: </em>this is known as scalable vector graphics, they are
-            marked with XML, and are typically for two-dimensional graphics.
-          </p>
-          <p>
-            <em>PNG: </em>best for biomorphic shapes and line art, and solid
-            colors.
-          </p>
-          <p>
-            <em>GIF: </em> typically seen for use with short videos
+            <ul>
+              File formats:
+              <li>
+                <em>JPG: </em>these types of files are used for photography,
+                they can compress into smaller sizes, and remain rectangular.
+              </li>
+              <li>
+                <em>WebP: </em>these files are similar to JPG, except
+                transparent backgrounds can be applied to this format.{" "}
+              </li>
+              <li>
+                <em>SVG: </em>this is known as scalable vector graphics, they
+                are marked with XML, and are typically for two-dimensional
+                graphics.
+              </li>
+              <li>
+                <em>PNG: </em>best for biomorphic shapes and line art, and solid
+                colors.
+              </li>
+              <li>
+                <em>GIF: </em> typically seen for use with short videos.
+              </li>
+            </ul>
           </p>
         </article>
 
@@ -223,24 +184,7 @@ function FeaturePage() {
             Another reason to use stylesheets is to improve usability. Going
             back to the 5 E's of usability, stylesheets can assist in
             accomplishing these goals by improving the readability and
-            navigation. Readability contributes to effectiveness and efficiency,
-            while navigation clearly contributes to ease of navigation.
-          </p>
-
-          <p>
-            There are five ways to incorporate different styles into an HTML
-            file. Adjusting style through external files is the most widely
-            used. Since the style parameters are only required to be entered
-            once, it is the most efficient. The stylesheet is linked inside the
-            head tags at the top of a file, and it will apply to all pages on
-            the site that are linked to that stylesheet. Another way to import
-            specific .css styles, would be to import it directly on the .css
-            file. The remaining options are typically used to make single style
-            changes, as they are added directly to the HTML file. For example,
-            you could embed the style change between style tags or directly
-            inline with the tag. The other two options are a bit more
-            complicated, those are JavaScript template literals and regular
-            JavaScript.{" "}
+            navigation.
           </p>
         </article>
 
@@ -321,34 +265,6 @@ function FeaturePage() {
           </p>
         </article>
 
-        <article id="express">
-          <h3>
-            Express
-            <a href="#top">
-              <i>
-                <BsArrowUpShort />
-              </i>
-            </a>
-          </h3>
-          <p>
-            Node is a publicly available platform, otherwise known as
-            open-sourced, that allows developer's everywhere to contribute to
-            its maintenance. It is not platform dependent, allowing it to be a
-            portable system, being able to be utilized on Windows, macOS, or
-            Linux. JavaScript is the language used by Node. Previously,
-            JavaScript could only be used in a browser. Node allowed JavaScript
-            to be run outside a browser, which expanded developer capabilities.
-            There are thousands of packages available on Node, npm is a package
-            manager and installer specifically for Node. Express is a web
-            framework for Node, it is used to help build applications. These
-            three technologies make the process of server-side development more
-            efficient, by allowing the developer to capitalize on already
-            available programs, thus preventing them from having to always start
-            from scratch. Express allows a developer who is already familiar
-            with JavaScript, capitalize on their already established skills to
-            work on the frontend, as well as the backend.
-          </p>
-        </article>
         <article id="dom">
           <h3>
             Testing DOM Changes
@@ -360,7 +276,7 @@ function FeaturePage() {
           </h3>
           <p>
             DOM, or Document Object Model, allows a web page to be manipulated.
-            Developers use JavaScript and Express to update DOM because it has
+            Developers can use JavaScript and Express to update DOM because it has
             tools that allow for greater efficiency and stronger programs.
             JavaScript is defaulted to synchronous programming, but has the
             capability for asynchronous programming. Asynchronous programming is

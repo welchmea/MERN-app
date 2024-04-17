@@ -39,7 +39,7 @@ function App() {
                   element={<VitaminPage setVitamin={setupdateVitamins} />}
                 />
                 <Route
-                  path="/update-vitamin"
+                  path="/updateVitamin"
                   element={<UpdateVitamin updateVitamins={vitamins} />}
                 />
               </Routes>

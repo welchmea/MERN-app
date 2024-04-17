@@ -23,97 +23,94 @@ export const CreateVitamin = () => {
       alert(
         `Congratulations! You have added a new Vitamin to your supplements.`
       );
-      reroute("/VitaminPage");
+      reroute("/vitamin-page");
     } else {
       alert(
         `Defer to the status code: ${results.status}, to determine what went wrong.`
       );
     }
-    reroute("/VitaminPage");
+    reroute("/vitamin-page");
   };
   return (
     <>
-    <div className="body-text-in-main">
-      <h2>Add Vitamins</h2>
-      <article>
-        <p >
-          Fill in the following fields to add a new entry to your database.
-        </p>
-        <form
+      <div className="body-text-in-main">
+        <h2>Add Vitamins</h2>
+
+        <p>Fill in the following fields to add a new entry to your database.</p>
+         <form
           onSubmit={(e) => {
             e.preventDefault();
           }}
-        ></form>
+        ></form> 
         <div className="center-table-div">
-        <table className="vitaminTable" id="vitamins">
-          <caption>
-            <p>Which Vitamins would you like to add?</p>
-          </caption>
-          <thead>
-            <tr>
-              <th className="required">Vitamin Name</th>
-              <th className="required">Date Taken</th>
-              <th className="required">Purpose for taking</th>
-              <th className="required">Amount per day (mg)</th>
-              <th>Add</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <label htmlFor="vitamin" className="required">
-                  <input
-                    type="text"
-                    placeholder="What kind of supplement is this?"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    id="vitamin"
-                  />
-                </label>
-              </td>
-              <td>
-                <label htmlFor="date" className="required">
-                  <input
-                    type="date"
-                    value={date}
-                    onChange={(e) => setDate(e.target.value)}
-                    id="date"
-                  />
-                </label>
-              </td>
-              <td>
-                <label htmlFor="purpose" className="required">
-                  <input
-                    type="text"
-                    placeholder="Why are you taking this supplement?"
-                    value={purpose}
-                    onChange={(e) => setPurpose(e.target.value)}
-                    id="purpose"
-                  />
-                </label>
-              </td>
-              <td>
-                <label htmlFor="unit" className="required">
-                  <input
-                    type="number"
-                    value={unit_day}
-                    onChange={(e) => setUnitDay(e.target.value)}
-                    id="unit"
-                  />
-                </label>
-              </td>
-              <td>
-                <label htmlFor="alter">
-                  <button type="submit" onClick={addVitamin} id="alter">
-                    Click!
-                  </button>
-                </label>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <table className="vitaminTable" id="vitamins">
+             <caption>
+              <p>Which Vitamins would you like to add?</p>
+            </caption> 
+            <thead>
+              <tr>
+                <th className="required">Vitamin Name</th>
+                <th className="required">Date Taken</th>
+                <th className="required">Purpose for taking</th>
+                <th className="required">Amount per day (mg)</th>
+                <th>Add</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label htmlFor="vitamin" className="required">
+                    <input
+                      type="text"
+                      placeholder="What kind of supplement is this?"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      id="vitamin"
+                    />
+                  </label>
+                </td>
+                <td>
+                  <label htmlFor="date" className="required">
+                    <input
+                      type="date"
+                      value={date}
+                      onChange={(e) => setDate(e.target.value)}
+                      id="date"
+                    />
+                  </label>
+                </td>
+                <td>
+                  <label htmlFor="purpose" className="required">
+                    <input
+                      type="text"
+                      placeholder="Why are you taking this supplement?"
+                      value={purpose}
+                      onChange={(e) => setPurpose(e.target.value)}
+                      id="purpose"
+                    />
+                  </label>
+                </td>
+                <td>
+                  <label htmlFor="unit" className="required">
+                    <input
+                      type="number"
+                      value={unit_day}
+                      onChange={(e) => setUnitDay(e.target.value)}
+                      id="unit"
+                    />
+                  </label>
+                </td>
+                <td>
+                  <label htmlFor="alter">
+                    <button type="submit" onClick={addVitamin} id="alter">
+                      Click!
+                    </button>
+                  </label>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </article>
       </div>
     </>
   );
