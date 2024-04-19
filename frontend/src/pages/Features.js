@@ -1,9 +1,7 @@
 import React from "react";
 import { BsArrowUpShort } from "react-icons/bs";
-import { useBackgroundImage } from "../components/useBackgroundImage";
 
 function FeaturePage() {
-  useBackgroundImage("images/krzysztof-kowalik-9pFK1FR_5KQ-unsplash.jpg");
   return (
     <>
       <div className="img-div-main">

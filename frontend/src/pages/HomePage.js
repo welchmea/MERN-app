@@ -1,34 +1,32 @@
 import React from "react";
-import { useBackgroundImage } from "../components/useBackgroundImage";
 import { DiMongodb } from "react-icons/di";
 import { SiExpress, SiReact, SiNodedotjs } from "react-icons/si";
 
 function HomePage() {
-  useBackgroundImage("images/pawel-czerwinski-LAadii3dGQM-unsplash.jpg");
   return (
     <>
       <div className="img-div-main">
         <div
           className="icon-hover-main-transform"
-          style={{ marginRight: 200, width: "full" }}
+          style={{ marginRight: 200, width: "full", fontSize: 40 }}
         >
           <DiMongodb />
         </div>
         <div
           className="icon-hover-main-transform"
-          style={{ marginLeft: 200, width: "full" }}
+          style={{ marginLeft: 200, width: "full", fontSize: 40 }}
         >
           <SiExpress />
         </div>
         <div
           className="icon-hover-main-transform"
-          style={{ marginRight: 200, width: "full" }}
+          style={{ marginRight: 200, width: "full", fontSize: 40 }}
         >
           <SiReact />
         </div>
         <div
           className="icon-hover-main-transform"
-          style={{ marginLeft: 200, width: "full" }}
+          style={{ marginLeft: 200, width: "full" , fontSize: 40}}
         >
           <SiNodedotjs />
         </div>

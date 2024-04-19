@@ -15,7 +15,7 @@
 /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
 body {
   /* Can alternatively define in html {} or :root {} */
-  /* background-image: url(./images/krzysztof-kowalik-9pFK1FR_5KQ-unsplash.jpg); */
+  background-image: url("./images/pawel-czerwinski-LAadii3dGQM-unsplash.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -31,7 +31,7 @@ body {
 }
 
 .carousel img {
-  width: 70%!important;
+  width: 70% !important;
 }
 .icon {
   font-size: 130%;
@@ -46,7 +46,6 @@ header {
   color: black;
   border-radius: 8px;
   margin-bottom: 2px;
-  font-size: x-large;
 }
 
 main {
@@ -63,6 +62,7 @@ main {
   line-height: 2;
   font-size: 110%;
   text-align: left;
+  width: 100%;
 }
 .img-div-main {
   display: flex;
@@ -72,8 +72,6 @@ main {
   padding: 2%;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 8px;
-  border: 2px solid black;
-  font-size: 350%;
   text-align: center;
 }
 .icon-hover-main-transform:hover {
@@ -95,11 +93,11 @@ ul {
 }
 
 ul > li {
-  margin-left:4em;
+  margin-left: 4em;
   margin-bottom: 1%;
 }
 ul > li:first-child {
-  margin-top:1%;
+  margin-top: 1%;
 }
 
 li > li {
@@ -118,7 +116,7 @@ button:hover {
   color: white;
   transform: scale(1.1);
   transition: ease-in-out;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 /* Navigation */
@@ -291,11 +289,6 @@ textarea {
   background-color: var(--yellowbeige);
   font-size: 120%;
 }
-
-.e-carousel.e-partial .e-carousel-slide-container {
-  padding: 0 150px;
-}
-
 @keyframes App-logo {
 }
 

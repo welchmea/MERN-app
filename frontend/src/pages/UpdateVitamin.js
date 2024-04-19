@@ -1,9 +1,7 @@
 import React, { useState }  from 'react';
 import { useNavigate } from "react-router-dom";
-import { useBackgroundImage } from '../components/useBackgroundImage';
 
 export const UpdateVitamin = ({ updateVitamins }) => {
-    useBackgroundImage('images/denis-sebastian-tamas-Prsu103pTio-unsplash.jpg')
     const [name, setName] = useState(updateVitamins.name);
     const [date, setDate] = useState(updateVitamins.date);
     const [purpose, setPurpose] = useState(updateVitamins.purpose);
