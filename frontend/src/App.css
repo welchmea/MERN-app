@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 @import "react-responsive-carousel/lib/styles/carousel.min.css";
 :root {
   --lightgreybrown: rgba(94, 80, 78, 1);
@@ -22,8 +22,9 @@ body {
   background-repeat: no-repeat;
   background-color: black;
   color: black;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Comfortaa", sans-serif;
   font-weight: bold;
+  font-size: 90%;
   margin: 0 auto;
   padding: 2%;
   max-width: 90%;
@@ -47,6 +48,12 @@ header {
   border-radius: 8px;
   margin-bottom: 2px;
 }
+h2 {
+  font-size: 110%;
+}
+h3 {
+  font-size: 90%;
+}
 
 main {
   display: flex;
@@ -60,7 +67,6 @@ main {
   border-radius: 8px;
   border: 2px solid rgba(235, 235, 227, 0.8);
   line-height: 2;
-  font-size: 110%;
   text-align: left;
 }
 .img-div-main {
@@ -103,7 +109,7 @@ li > li {
   margin-left: 4em;
 }
 button {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Comfortaa", sans-serif;
   background-color: black;
   color: white;
   padding: 12px;
@@ -130,7 +136,7 @@ nav a {
   background-color: rgba(16, 57, 64, 0.5);
   color: black;
   padding: 1%;
-  margin-top: 0;
+  margin-top: 2px;
   border-radius: 8px;
   margin-right: 2px;
 }
@@ -146,14 +152,6 @@ nav a:hover {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
 }
-
-/*  -----  Typography  ----- */
-
-/* h2 {
-}
-
-h3 {
-} */
 
 /*  ----- Table ----- */
 table {
@@ -217,7 +215,7 @@ button,
 input,
 select,
 textarea {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Comfortaa", sans-serif;
   display: flex;
   flex-wrap: wrap;
 }
